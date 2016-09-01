@@ -4,8 +4,7 @@
  *
  */
 
-var grid = new HexGrid(50,50,5,5);
-
+var grid = new HexGrid(50, 50, 5, 5);
 
 var render = (function () {
 
@@ -38,8 +37,6 @@ var render = (function () {
         canvas.width = w;
         canvas.height = h;
 
-        //theHex = new Hex(canvas.width / 2, canvas.height / 2, 100);
-
     },
 
     // draw to the canvas
@@ -51,10 +48,7 @@ var render = (function () {
         ctx.strokeStyle = '#00ff00';
         ctx.fillStyle = '#00ff00';
 
-		hexCanvas.drawGrid(ctx, grid);
-		
-        //hexCanvas.drawHex(ctx, theHex);
-        //hexCanvas.atHexCenter(ctx, theHex, 'hex.js');
+        hexCanvas.drawGrid(ctx, grid);
 
     };
 
