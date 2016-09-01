@@ -61,6 +61,22 @@ var render = (function () {
 
     // events
     canvas.addEventListener('touchstart', touch);
+
+    // mouse click on the canvas
+    canvas.addEventListener('mousedown', function (e) {
+
+        var box = e.target.getBoundingClientRect(),
+        x = e.clientX - box.left,
+        y = e.clientY - box.top;
+
+        grid.checkPoint(x, y, function (result) {
+
+            console.log(result);
+
+        });
+
+    });
+
     window.addEventListener('resize', function () {
 
         size();
