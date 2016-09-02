@@ -76,6 +76,8 @@ var render = (function () {
 
         });
 
+        draw();
+
     });
 
     window.addEventListener('resize', function () {
