@@ -4,7 +4,7 @@
  *
  */
 
-var grid = new HexGrid(50, 50, 20, 12, 25);
+var grid = new HexGrid(100, 100, 5, 5, 50);
 
 var render = (function () {
 
@@ -49,6 +49,7 @@ var render = (function () {
         ctx.fillStyle = '#00ff00';
 
         hexCanvas.drawGrid(ctx, grid);
+        hexCanvas.drawBoxOverlay(ctx, grid);
 
     };
 
@@ -71,7 +72,7 @@ var render = (function () {
 
         grid.checkPoint(x, y, function (result) {
 
-            console.log(result);
+            //console.log(result);
 
         });
 
