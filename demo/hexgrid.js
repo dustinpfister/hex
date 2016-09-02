@@ -64,7 +64,7 @@ var render = (function () {
     canvas.addEventListener('touchstart', touch);
 
     // mouse click on the canvas
-    canvas.addEventListener('mousedown', function (e) {
+    canvas.addEventListener('mousemove', function (e) {
 
         var box = e.target.getBoundingClientRect(),
         x = e.clientX - box.left,
