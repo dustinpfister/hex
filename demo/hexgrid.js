@@ -4,7 +4,7 @@
  *
  */
 
-var grid = new HexGrid(100, 100, 5, 5, 50);
+var grid = new HexGrid(200, 100, 5, 5, 25);
 
 var render = (function () {
 
